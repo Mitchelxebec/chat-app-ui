@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,400&display=swap');
+
+:root {
+    --background: linear-gradient(to right hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    font-family: 'Rubik';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(270, 20%, 96%);
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.first_color,
+.second_color {
+    height: 590px;
+    width: 20%;
+    max-width: 375px;
+}
+
+.first_color {
+    background-color: hsl(293, 100%, 63%);
+    border-bottom-right-radius: 20em;
+}
+
+.second_color {
+    background-color: hsl(270, 4%, 89%);
+    border-top-left-radius: 20em;
+    position: absolute;
+    bottom: 0;
+    transform: translate(400%);
+}
+
+.back_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.front-section {
+    display: flex;
+    position: absolute;
+    position: relative;
+    transform: translate(0, -500px);
+    justify-content: space-evenly;
+}
+
+.phone {
+    height: 535px;
+    width: 17.5%;
+    max-width: 375px;
+    background-color: #fff;
+    border-radius: 35px;
+    box-shadow: 1px 1px 15px;
+}
+
+.screen {
+    height: 514px;
+    width: 94%;
+    max-width: 375px;
+    border-radius: 25px;
+    background-color: hsl(270, 4%, 89%);
+    margin: 10px 7.9px;
+}
+
+.top-screen {
+    height: 80px;
+    width: 100%;
+    max-width: 375px;
+    background-color: hsl(293, 100%, 63%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0.5px 0.5px 1px;
+}
+
+.smart {
+    height: 21px;
+    width: 55%;
+    max-width: 375px;
+    background-color: #fff;
+    position: relative;
+    left: 53px;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+
+.first_text {
+    display: flex;
+    margin-top: 2px;
+    padding-left: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+#first_icon {
+    color: #fff;
+    transform: translate(-0%, 12px);
+    display: inline-block;
+}
+
+#second_icon {
+    color: #fff;
+    transform: translate(700%, 14px);
+    display: inline-block;
+}
+
+.first_text img {
+    height: 25px;
+    width: 25px;
+    max-width: 375px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transform: translate(0px, 7px);
+}
+
+.text {
+    display: inline-block;
+}
+
+.first_text h3 {
+    color: #fff;
+    max-width: 375px;
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: medium;
+    line-height: 1.5em;
+}
+
+.first_p {
+    color: hsl(276, 100%, 81%);
+    max-width: 375px;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: small;
+}
+
+
+.speech-baloons {
+    margin-top: 10px;
+    margin-left: 5px;
+    max-width: 375px;
+    gap: 4px;
+    width: 100%;
+}
+
+.balloon1 {
+    height: 35px;
+    width: 129px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(276, 86%, 86%);
+}
+
+.balloon1 p {
+    margin-left: 5px;
+    transform: translateY(7px);
+    max-width: 375px;
+    font-size: xx-small;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    color: hsl(276, 55%, 52%);
+    padding-left: 1px;
+}
+
+.balloon2 {
+    height: 35px;
+    width: 145px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(276, 86%, 86%);
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+.balloon2 p {
+    margin-left: 5px;
+    transform: translateY(7px);
+    max-width: 375px;
+    font-size: xx-small;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    color: hsl(276, 55%, 52%);
+    padding-left: 1px;
+}
+
+.balloon3 {
+    transform: translate(90px, 10px);
+    max-width: 375px;
+    display: flex;
+    gap: 10px;
+}
+
+img[src*='dog'] {
+    height: 40px;
+    border-radius: 10px;
+}
+
+.balloon4 {
+    height: 35px;
+    width: 140px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    white-space: nowrap;
+    transform: translate(95px, 10px);
+    margin-top: 10px;
+}
+
+.balloon4 p {
+    margin-left: 5px;
+    transform: translateY(7px);
+    max-width: 375px;
+    font-size: xx-small;
+    font-family: 'Rubik';
+    color: hsl(271, 15%, 43%);
+    padding-right: 1px;
+}
+
+.balloon5 {
+    height: 25px;
+    width: 95px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    white-space: nowrap;
+    transform: translate(139px, 3px);
+    margin-top: 15px;
+}
+
+.balloon5 p {
+    margin-left: 5px;
+    transform: translateY(7px);
+    max-width: 375px;
+    font-size: xx-small;
+    font-family: 'Rubik';
+    color: hsl(271, 15%, 43%);
+    padding-left: 5px;
+}
+
+.balloon6 {
+    height: 49px;
+    width: 140px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(276, 86%, 86%);
+    white-space: nowrap;
+    transform: translateY(8px);
+    margin-top: 10px;
+}
+
+.balloon6 p {
+    margin-left: 5px;
+    transform: translateY(7px);
+    max-width: 375px;
+    font-size: xx-small;
+    font-family: 'Rubik';
+    color: hsl(276, 55%, 52%);
+    padding-left: 1px;
+}
+
+.balloon7 {
+    height: 30px;
+    width: 140px;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(288, 75%, 57%);
+    white-space: nowrap;
+    transform: translateY(5px);
+    margin-top: 10px;
+}
+
+.balloon7 p {
+    margin-left: 15px;
+    transform: translateY(10px);
+    max-width: 375px;
+    font-size: xx-small;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    color: #fff;
+}
+
+#price {
+    position: relative;
+    left: 5px;
+    top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: hsl(288, 75%, 57%);
+}
+
+#price:before {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin: 10% auto;
+    border-radius: 50%;
+}
+
+#price:checked:before {
+    background-color: #fff;
+}
+
+.balloon7 span {
+    color: #fff;
+    max-width: 375px;
+    font-size: medium;
+    font-family: 'Rubik';
+    font-weight: 600;
+    position: relative;
+    top: 6px;
+    left: 10px;
+}
+
+
+.balloon8 {
+    height: 30px;
+    width: 140px;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(288, 75%, 57%);
+    white-space: nowrap;
+    transform: translateY(5px);
+    margin-top: 10px;
+}
+
+.balloon8 p {
+    margin-left: 15px;
+    transform: translateY(10px);
+    max-width: 375px;
+    font-size: xx-small;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    color: #fff;
+}
+
+#price2 {
+    position: relative;
+    left: 5px;
+    top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: hsl(288, 75%, 57%);
+}
+
+#price2:before {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin: 10% auto;
+    border-radius: 50%;
+}
+
+#price2:checked:before {
+    background-color: #fff;
+}
+
+.balloon8 span {
+    color: #fff;
+    max-width: 375px;
+    font-size: medium;
+    font-family: 'Rubik';
+    font-weight: 600;
+    position: relative;
+    top: 6px;
+    left: 19px;
+}
+
+input[type='text'] {
+    height: 29px;
+    width: 90%;
+    max-width: 375px;
+    transform: translate(5px, 19px);
+    border-radius: 25px;
+    border: none;
+}
+
+form input {
+    padding-left: 20px;
+    font-family: 'Rubik';
+}
+
+::placeholder {
+    position: relative;
+    left: 10px;
+    color: hsl(206, 6%, 79%);
+}
+
+button {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(271, 36%, 24%);
+    transform: translate(199px, -5px);
+    position: absolute;
+}
+
+#third_icon {
+    color: #fff;
+}
+
+.read {
+    margin-top: 195px;
+}
+
+.read h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    white-space: nowrap;
+    color: hsl(271, 36%, 24%);
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.read p {
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Rubik';
+    color: hsl(271, 15%, 43%);
+    line-height: 29px;
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        overflow: hidden;
+    }
+
+    .first_color {
+        width: 180px;
+        height: 400px;
+    }
+
+    .second_color {
+        width: 185px;
+        height: 450px;
+        transform: translate(189px, 20px);
+    }
+
+    .front-section{
+        margin-top: 140px;
+        flex-direction: column;
+    }
+
+    .phone {
+        height: 465px;
+        width: 235px;
+        margin-left: 59px;
+       transform: translate(0, -20px);
+    }
+
+    .screen {
+        height: 450px;
+        transform: translate(-1px, -2px);
+    }
+
+    .first_text img {
+        height: 23px;
+        width: 23px;
+    }
+
+    .first_text {
+        margin-top: 10px;
+    }
+
+    .first_text h3 {
+        font-weight: normal;
+        font-size: small;
+    }
+
+    .first_p {
+        font-size: small;
+    }
+
+    #second_icon {
+        margin-bottom: 55px;
+    }
+
+    .balloon1 {
+        height: 30px;
+        width: 110px;
+    }
+
+    .balloon1 p {
+        font-size: 8px;
+        transform: translateY(5px);
+    }
+
+    .balloon2 {
+        height: 30px;
+        width: 130px;
+    }
+
+    .balloon2 p {
+        font-size: 8px;
+        transform: translateY(5px);
+    }
+
+    .balloon3 {
+        transform: translate(88px,9px);
+    }
+
+    img[src*='dog'] {
+        height: 35px;
+    }
+
+    .balloon4 {
+        height: 30px;
+        width: 125px;
+        transform: translate(88px, 5px)
+    }
+
+    .balloon4 p {
+        font-size: 8px;
+        transform: translateY(5px);
+    }
+
+    .balloon5 {
+        height: 20px;
+        width: 100px;
+        transform: translate(110px, -5px)
+    }
+
+    .balloon5 p {
+        font-size: 8px;
+        transform: translateY(4px);
+    }
+
+    .balloon6,
+    .balloon7,
+    .balloon8,
+    .text-bar {
+        transform: translateY(-5px) 
+    }
+
+    .text-bar {
+        transform: translateY(-10px) 
+    }
+
+    ::placeholder {
+        font-size: smaller;
+    }
+
+    button {
+        transform: translate(180px, -5px);
+    }
+
+    .read {
+        transform: translate(20px, -190px);
+    }
+
+    .read h2 {
+        font-size: xx-large;
+        transform: translate(20px)
+    }
+
+    .read p {
+        text-align: center;
+        line-height: normal;
+        font-size: 13px;
+        font-weight: lighter;
+        width: 319px;
+    }
+}
