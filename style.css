@@ -59,7 +59,7 @@ body {
 
 .phone {
     height: 535px;
-    width: 18%;
+    width: 20%;
     max-width: 375px;
     background-color: #fff;
     border-radius: 35px;
@@ -68,7 +68,7 @@ body {
 
 .screen {
     height: 514px;
-    width: 94%;
+    width: 95%;
     max-width: 375px;
     border-radius: 25px;
     background-color: hsl(270, 4%, 89%);
